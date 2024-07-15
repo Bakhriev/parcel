@@ -6,9 +6,9 @@
 		"main": false
 	},
 	"scripts": {
-		"clean": "rimraf .parcel-cache && rimraf dist",
+		"clean": "rm -rf .parcel-cache && rm -rf dist",
 		"dev": "npm run clean && parcel ./src/*.html",
-		"build": "npm run clean && parcel build ./src/*.html --no-source-maps --public-url ."
+		"build": "parcel build ./src/*.html --no-source-maps --public-url ."
 	},
 	"author": "Bakhriev",
 	"license": "ISC",
@@ -20,7 +20,6 @@
 		"parcel": "^2.12.0",
 		"posthtml-include": "^2.0.1",
 		"prettier": "^3.3.3",
-		"rimraf": "^6.0.1",
 		"sharp": "^0.31.3"
 	}
 }
