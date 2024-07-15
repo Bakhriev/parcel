@@ -1,0 +1,70 @@
+{
+	"include": {
+		"prefix": "inc",
+		"scope": "html",
+		"body": ["<include src=\"${0}\"></include>"],
+	},
+
+	"include with props": {
+		"prefix": "incl",
+		"scope": "html",
+		"body": ["<include src=\"${0}\" locals='{\"\": \"\"}'></include>"],
+	},
+
+	"background": {
+		"prefix": "/bg",
+		"scope": "css, scss",
+		"body": ["background: url('${0}') no-repeat center/cover;"],
+	},
+
+	"media": {
+		"scope": "css, scss",
+		"prefix": "med",
+		"body": ["@media screen and (max-width: $1){}"],
+		"description": "create media query max-width",
+	},
+
+	"before": {
+		"scope": "css, scss",
+		"prefix": "bff",
+		"body": [
+			"&::before {",
+			"content: '';",
+			"position: absolute;",
+			"top: 0;",
+			"left: 0;",
+			"width: 0;",
+			"height: 0;",
+			"}",
+		],
+		"description": "create before css",
+	},
+
+	"after": {
+		"scope": "css, scss",
+		"prefix": "aff",
+		"body": [
+			"&::after {",
+			"content: '';",
+			"position: absolute;",
+			"top: 0;",
+			"right: 0;",
+			"width: 0;",
+			"height: 0;",
+			"}",
+		],
+		"description": "create after css",
+	},
+
+	"querySelector": {
+		"scope": "javascript, typescript",
+		"prefix": "dq",
+		"body": "document.querySelector('$0');",
+	},
+
+	"querySelectorAll": {
+		"scope": "javascript, typescript",
+		"prefix": "dqa",
+		"body": "document.querySelectorAll('$0');",
+	},
+}
