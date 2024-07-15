@@ -30,11 +30,16 @@
 					</include>
 					<span data-counter>0</span>
 
-					<img
-						src="./assets/img/iccup.jpg?as=webp&width=300&height=400"
-						alt="" />
+					<picture>
+						<source
+							media="(max-width: 1200px)"
+							srcset="./assets/img/iccup.jpg?as=webp&width=300" />
+						<img src="./assets/img/iccup.jpg?as=webp&width=500" alt="" />
+					</picture>
 				</div>
 			</main>
+
+			<a href="./catalog.html">catalog</a>
 
 			<include src="./assets/components/footer/footer.html"></include>
 		</div>
