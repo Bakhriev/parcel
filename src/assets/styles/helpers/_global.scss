@@ -33,3 +33,8 @@ body {
 	max-width: 1470px;
 	width: 100%;
 }
+
+svg {
+	overflow: clip;
+	fill: red;
+}

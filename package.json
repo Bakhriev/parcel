@@ -15,7 +15,6 @@
 	"description": "Parcel web template",
 	"devDependencies": {
 		"@agragregra/parcel-namer-beautify": "^1.0.1",
-		"@gatsbyjs/parcel-namer-relative-to-cwd": "^2.13.1",
 		"@parcel/transformer-sass": "^2.12.0",
 		"parcel": "^2.12.0",
 		"posthtml-include": "^2.0.1",
